@@ -1,7 +1,6 @@
 extends Node
 
 var vm: LuauVM
-var _loaded_packages = {}
 
 var lua_node_script = preload("res://addons/selene-sdk-simulator/lua_node_script_impl.gd")
 
