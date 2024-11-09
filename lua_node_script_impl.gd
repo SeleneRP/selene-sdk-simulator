@@ -74,12 +74,6 @@ func _ready():
 	vm.lua_pop(1) # pop module - []
 
 func _process(delta: float):
-	# TODO this is just for testing:
-	if name == "SelectMap":
-		var mouse_pos = get_global_mouse_position()
-		var tiled_mouse_pos = Vector2(floor(mouse_pos.x / 76) * 76, floor(mouse_pos.y / 37) * 37)
-		global_position = tiled_mouse_pos + Vector2(37, 18.5)
-
 	if not _push_module(): # [module]
 		process_mode = ProcessMode.PROCESS_MODE_DISABLED
 		return
